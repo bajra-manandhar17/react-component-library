@@ -3,11 +3,25 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/react-component-library.cjs",
+      "import": "./dist/react-component-library.es.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "vite build",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -33,6 +47,8 @@
     "prop-types": "^15.8.1",
     "storybook": "^7.0.8",
     "typescript": "^5.0.2",
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0",
+    "vite-tsconfig-paths": "^4.2.0"
   }
 }
