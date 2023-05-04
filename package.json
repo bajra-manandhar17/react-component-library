@@ -1,5 +1,8 @@
 {
-  "name": "react-component-library",
+  "name": "@bajra-manandhar17/react-component-library",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "version": "0.0.0",
   "type": "module",
   "types": "dist/index.d.ts",
