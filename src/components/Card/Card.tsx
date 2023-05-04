@@ -3,7 +3,7 @@ type CardProps = {
   description: string;
 };
 
-export const Card = ({ title, description }: CardProps) => {
+const Card = ({ title, description }: CardProps) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
       <div className="px-6 py-4">
@@ -13,3 +13,5 @@ export const Card = ({ title, description }: CardProps) => {
     </div>
   );
 };
+
+export default Card;

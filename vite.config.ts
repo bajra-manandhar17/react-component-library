@@ -22,6 +22,11 @@ export default defineConfig(() => ({
           format === "cjs" ? "cjs" : "es.js"
         }`,
     },
+    rollupOptions: {
+      output: {
+        preserveModules: true,
+      }
+    },
     optimizeDeps: {
       exclude: ["react", "react-dom"]
     },
